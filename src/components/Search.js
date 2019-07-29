@@ -24,15 +24,15 @@ export default class Search extends Component {
                 value={search}
                 onChange={handleChange}
               />
-            </div>
-            <div className="input-group-append">
-              <button
-                type="submit"
-                className="input-group-text bg-primary text-white"
-                onClick={handleSubmit}
-              >
-                <i className="fas fa-search" />
-              </button>
+              <div className="input-group-append">
+                <button
+                  type="submit"
+                  className="input-group-text bg-primary text-white"
+                  onClick={handleSubmit}
+                >
+                  <i className="fas fa-search" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
