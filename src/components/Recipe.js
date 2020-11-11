@@ -15,7 +15,7 @@ export default class Recipe extends Component {
         <div className="card" style={{ height: "100%" }}>
           <img
             src={image_url}
-            style={{ height: "14rem" }}
+            style={{ height: "14rem", objectFit: "cover" }}
             className="img-card-top"
             alt="recipe"
           />
@@ -33,7 +33,7 @@ export default class Recipe extends Component {
               Details
             </Link>
             <a
-              href="{source_url}"
+              href={source_url}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-success mx-2 text-capitalize"
