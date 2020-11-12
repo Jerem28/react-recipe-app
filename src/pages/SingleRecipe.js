@@ -29,7 +29,7 @@ export default class SingleRecipe extends Component {
             const response = await fetch(url);
             const data = await response.json();
             console.log(data);
-            return data.map(item => {
+            return data.map(item => 
                 this.setState ({
                     url: item.shareAs,
                     imageUrl: item.image,
@@ -39,8 +39,8 @@ export default class SingleRecipe extends Component {
                     title: item.label,
                     calories: item.calories,
                     isThereData: true
-                });
-            });
+                })
+            );
         } catch (error) {
             console.log(error);
         }
